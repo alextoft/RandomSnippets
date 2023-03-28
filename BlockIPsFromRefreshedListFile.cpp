@@ -1,3 +1,7 @@
+// Windows NDIS filter driver
+// Reads file once per minute, takes each line as an IP address
+// and blocks all TCP connections to those targets
+
 #include <ntddk.h>
 #include <ndis.h>
 
